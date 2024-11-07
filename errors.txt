@@ -1,0 +1,10 @@
+=============== ERROR 1 ================
+Shows Logged out page of the Django administration site instead of my own Logged
+out page
+
+== FIX 1 ==
+check the INSTALLED_APPS setting of your project and make sure that django.contrib.admin 
+comes after the account application.
+
+== FIX 2 ==
+Apparently in this case, i named the template logout.html instead of logged_out.html
