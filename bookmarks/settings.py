@@ -109,6 +109,7 @@ AUTHENTICATION_BACKENDS = [
     'django.contrib.auth.backends.ModelBackend',
     'account.authentication.EmailAuthBackend',
     'social_core.backends.facebook.FacebookOAuth2',
+    'social_core.backends.google.GoogleOAuth2',
 ]
 
 # Internationalization
@@ -143,3 +144,8 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 #FACEBOOK AUTH  
 SOCIAL_AUTH_FACEBOOK_KEY = '2539251356278703'
 SOCIAL_AUTH_FACEBOOK_SECRET = '4430126d6071a9466f682e81cad41669'
+
+#GOOGLE AUTH
+SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = '695516002381-9pvacuqr1es35qcb56afrr3l2shnlff1.apps.googleusercontent.com'
+SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = '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'
+SOCIAL_AUTH_GOOGLE_OAUTH2_REDIRECT_URI = 'http://mysite.com:8000/social-auth/complete/google-oauth2/'
